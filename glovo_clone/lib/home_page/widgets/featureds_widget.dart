@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:glovo_clone/general/widgets/featured_card.dart';
 import 'package:glovo_clone/general/widgets/section_titles.dart';
