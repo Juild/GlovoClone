@@ -29,7 +29,6 @@ class HomePage extends StatelessWidget {
             slivers: [
               SliverAppBar(
                 backgroundColor: Colors.transparent,
-                elevation: 8,
                 pinned: true,
                 title: Padding(
                   padding: const EdgeInsets.only(bottom: 8.0),
