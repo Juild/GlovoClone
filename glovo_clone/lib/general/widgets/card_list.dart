@@ -7,9 +7,9 @@ class CardsList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ColoredBox(
-      color: Colors.white,
-      child: Column(
+    return Container(
+      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12)),
+      child: const Column(
         children: [Featured(), Featured(), Featured()],
       ),
     );

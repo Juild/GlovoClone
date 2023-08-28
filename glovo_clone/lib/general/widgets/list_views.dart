@@ -7,6 +7,12 @@ class AppListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(scrollDirection: scrollAxis, itemBuilder: (context, index) => FeaturedCard());
+    return ListView.builder(
+        scrollDirection: scrollAxis,
+        itemBuilder: (context, index) => FeaturedCard(
+              rating: 10,
+              price: 10,
+              onTap: () {},
+            ));
   }
 }

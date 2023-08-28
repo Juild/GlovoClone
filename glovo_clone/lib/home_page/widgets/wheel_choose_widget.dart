@@ -5,13 +5,18 @@ class WheelElement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return Container(
+    var child = Container(
       decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.amber[100]),
       child: const Padding(
         padding: EdgeInsets.all(48.0),
-        child: Text('Food'),
+        child: Material(type: MaterialType.transparency, child: Text('Food')),
       ),
+    );
+    return Draggable<String>(
+      feedback: child,
+      childWhenDragging: SizedBox(),
+      onDragStarted: () => print("Drag started"),
+      child: child,
     );
   }
 }
